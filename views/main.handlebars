@@ -1,0 +1,12 @@
+<!-- Loop over each object in the posts array -->
+{{#each posts as |post| }}
+    <section class="post">
+        <section class="post-head">
+                <p><i>{{post.subject}}</i></p>
+            </section>
+            <section class="post-body">
+                <p>Posted by <b>{{post.username}}</b> on <b>{{post.date}}</b></p>
+            </section>
+        </section>
+    </section>
+{{/each}}
