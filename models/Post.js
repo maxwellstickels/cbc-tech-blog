@@ -11,9 +11,16 @@ Post.init(
             primaryKey: true,
             autoIncrement: true,
         },
+        date: {
+            type: DataTypes.INTEGER,
+            allowNull: false,
+        },
+        subject: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
         content: {
             type: DataTypes.STRING(2000),
-            allowNull: false,
         },
         user_id: {
             type: DataTypes.INTEGER,

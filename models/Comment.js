@@ -11,6 +11,10 @@ Comment.init(
             primaryKey: true,
             autoIncrement: true,
         },
+        date: {
+            type: DataTypes.INTEGER,
+            allowNull: false,
+        },
         content: {
             type: DataTypes.STRING(1000),
             allowNull: false,
